@@ -12,6 +12,6 @@ RUN python -m pip install --upgrade pip && pip install -r requirements.txt
 COPY app.py .
 COPY tests ./tests
 
-EXPOSE 7860
+EXPOSE 10000
 
-CMD ["streamlit", "run", "app.py", "--server.port=7860", "--server.address=0.0.0.0", "--server.headless=true"]
+CMD ["python", "-m", "streamlit", "run", "app.py", "--server.address=0.0.0.0", "--server.port=10000", "--server.headless=true"]
