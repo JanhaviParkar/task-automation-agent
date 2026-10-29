@@ -82,7 +82,7 @@ def run_agent(topic: str, temperature: float = 0.2) -> str:
 
 
 st.set_page_config(page_title="Task Automation Agent", page_icon="🔎", layout="centered")
-st.title("🔎 Task-Automation Agent")
+st.title("🔎 Gemini Research Assistant")
 st.write("Enter a topic. The agent searches the web and uses Gemini to create a three-point research brief.")
 
 with st.sidebar:
