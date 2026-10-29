@@ -14,4 +14,4 @@ COPY tests ./tests
 
 EXPOSE 10000
 
-CMD ["python", "-m", "streamlit", "run", "app.py", "--server.address=0.0.0.0", "--server.port=10000", "--server.headless=true"]
+CMD ["streamlit", "run", "app.py", "--server.port=10000", "--server.address=0.0.0.0", "--server.headless=true"]
